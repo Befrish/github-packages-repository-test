@@ -20,9 +20,5 @@ jobs:
       uses: actions/setup-java@v1
       with:
         java-version: 1.8
-    - name: Add settings.xml dynamically
-      uses: s4u/maven-settings-action@v2.1.1
-      with:
-        servers: '[{"id": "github", "username": "software@befrish.de", "password": "0610a6ea062dc27f7dd7d1ff0866ffdaac48655d"}]'
     - name: Build with Maven
       run: mvn -B package

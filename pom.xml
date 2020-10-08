@@ -8,11 +8,15 @@
     <artifactId>github-packages-repository-test</artifactId>
     <version>1.0-SNAPSHOT</version>
 
+    <properties>
+        <github-packages-token>0610a6ea062dc27f7dd7d1ff0866ffdaac48655d</github-packages-token>
+    </properties>
+
     <repositories>
         <repository>
             <id>github</id>
-            <name>GitHub Befrish Apache Maven Packages</name>
-            <url>https://maven.pkg.github.com/Befrish</url>
+            <name>GitHub Befrish jqwik-vavr Apache Maven Packages</name>
+            <url>https://token:${github-packages-token}@maven.pkg.github.com/Befrish/jqwik-vavr</url>
         </repository>
     </repositories>
 
